@@ -14,3 +14,9 @@ $notas = [
 
 krsort($notas); //Função que ordena os indice em ordem alfabetica
 var_dump($notas);
+
+if (is_array($notas)) {
+    echo 'Sim, é um array'. PHP_EOL;
+}
+
+var_dump(array_is_list($notas));
