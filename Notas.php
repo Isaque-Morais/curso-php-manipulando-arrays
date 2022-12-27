@@ -19,4 +19,16 @@ if (is_array($notas)) {
     echo 'Sim, é um array'. PHP_EOL;
 }
 
+// Verifica se chave existe
 var_dump(array_is_list($notas));
+
+// Verifica se chave existe e não é null
+echo 'Isaque fez a prova:' .PHP_EOL;
+var_dump(isset($notas['Isaque']));
+
+// Verifica se o valor existe
+ echo 'Alguém tirou 10?' . PHP_EOL;
+ var_dump(in_array(10, $notas));
+
+echo 'Quem tirou 10?' . PHP_EOL;
+var_dump(array_search(10, $notas, true));
